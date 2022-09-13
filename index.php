@@ -66,82 +66,82 @@
                             ],
                         ];
     ?>
-<!-- INIZIO MARKUP -->
-    <header>
-        <div class="header-top">
-            <div class="logo-wrapper">
-                <a href="#" class="logo">
-                    <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" 
-                    alt="Google Logo"
-                    >
-                </a>
+    <!-- INIZIO MARKUP -->
+        <header>
+            <div class="header-top">
+                <div class="logo-wrapper">
+                    <a href="#" class="logo">
+                        <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png" 
+                        alt="Google Logo"
+                        >
+                    </a>
 
-                <div class="section-name">
-                    <p>Privacy e termini</p>
-                </div>
-            </div>
-
-            <div class="user-actions">
-                <div class="app-google">
-                    <i class="fa-solid fa-bars"></i>
+                    <div class="section-name">
+                        <p>Privacy e termini</p>
+                    </div>
                 </div>
 
-                <div class="user-profile">
-                    <div class="profile-pic">
-                        <h5>L</h5>
+                <div class="user-actions">
+                    <div class="app-google">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="user-profile">
+                        <div class="profile-pic">
+                            <h5>L</h5>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="header-bottom">
-            <div class="sections">
-                <a href="#">Introduzione</a>
-                <a href="#">Norme sulla privacy</a>
-                <a href="#">Termini di servizio</a>
-                <a href="#">Tecnologie</a>
-                <a href="#" class="active">Domande frequenti</a>
+            <div class="header-bottom">
+                <div class="sections">
+                    <a href="#">Introduzione</a>
+                    <a href="#">Norme sulla privacy</a>
+                    <a href="#">Termini di servizio</a>
+                    <a href="#">Tecnologie</a>
+                    <a href="#" class="active">Domande frequenti</a>
+                </div>
             </div>
-        </div>
-    </header>
-    <hr>
+        </header>
+        <hr>
 
-    <main class="boxed">
-        <?php 
-            foreach($questions as $question) {
-                //var_dump($question);
-                $singleQuestion = $question['question'];
-                echo " <h2 class='question'> $singleQuestion </h2> ";
-                $answers = $question['answers'];
-                //var_dump($answers);
-                foreach($answers as $answer) {
-                    echo "<p class='answer'> $answer </p>";
+        <main class="boxed">
+            <?php 
+                foreach($questions as $question) {
+                    //var_dump($question);
+                    $singleQuestion = $question['question'];
+                    echo " <h2 class='question'> $singleQuestion </h2> ";
+                    $answers = $question['answers'];
+                    //var_dump($answers);
+                    foreach($answers as $answer) {
+                        echo "<p class='answer'> $answer </p>";
+                    }
                 }
-            }
-        ?>
-    </main>
+            ?>
+        </main>
 
-    <footer>
-        <div class="boxed d-flex-between">
-            <div class="google-main-sections">
-                <a href="#">Google</a>
-                <a href="#">Tutto su Google</a>
-                <a href="#">Privacy</a>
-                <a href="#">Termini</a>
-            </div>
+        <footer>
+            <div class="boxed d-flex-between">
+                <div class="google-main-sections">
+                    <a href="#">Google</a>
+                    <a href="#">Tutto su Google</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Termini</a>
+                </div>
 
-            <div class="select-language">
-                <select name="language" id="language">
-                    <option value="italian">Italiano</option>
-                    <option value="english">Inglese</option>
-                    <option value="french">Francese</option>
-                    <option value="norwegian">Norvegese</option>
-                    <option value="spanish">Spagnolo</option>
-                    <option value="russian">Russo</option>
-                </select>
+                <div class="select-language">
+                    <select name="language" id="language">
+                        <option value="italian">Italiano</option>
+                        <option value="english">Inglese</option>
+                        <option value="french">Francese</option>
+                        <option value="norwegian">Norvegese</option>
+                        <option value="spanish">Spagnolo</option>
+                        <option value="russian">Russo</option>
+                    </select>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
