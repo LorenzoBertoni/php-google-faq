@@ -3,3 +3,112 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+}
+
+.header-top {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper, .user-actions {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+}
+
+.user-actions {
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.section-name p, .app-google i {
+    color: #5f6368;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    background-color: #BF360C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic h5 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.sections {
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    gap: 0 2rem;
+}
+
+.sections a {
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+a.active {
+    color: #3367D6;
+    border-bottom: 2px solid #3367D6;
+    margin-top: 2px;
+}
+
+.boxed{
+    width: 55%;
+    margin: auto;
+}
+
+.question, .answer {
+    margin-bottom: 1.5rem;
+}
+
+.question {
+    font-size: 22px;
+    margin-top: 6rem;
+    color: #5f6368;
+}
+
+.answer {
+    font-size: .9rem;
+}
+
+footer {
+    background-color: #F5F5F5;
+}
+
+.google-main-sections a{
+    color: #5f6368;
+    text-decoration: none;
+    font-size: 11px;
+    margin-right: .5rem;
+}
+
+.d-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
